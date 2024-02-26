@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+  overflow-x: hidden;
+
   color: white;
 }
 
@@ -132,6 +134,7 @@ label {
 
 /* form css */
 
+
 @media (max-width: 684px) {
   .form-card {
     width: 400px !important;
@@ -166,6 +169,10 @@ label {
 }
 
 @media (max-width: 401px) {
+  .body{
+    /* background-size: auto; */
+  }
+
   .form-card {
     margin-left: 48px;
     width: 250px !important;
@@ -243,8 +250,8 @@ label {
 }
 
 .form-card {
-  width: 600px;
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 650px;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px;
 }

@@ -42,8 +42,8 @@ const Book = () => {
                                         <form ref={form} onSubmit={sendEmail}>
                                             <div className="form-group">
                                                 <div className="d-flex justify-content-between dropdowns">
-                                                    <select className="form-control mr-2" name='time_slot' id="timeSlot">
-                                                        <option value="" disabled selected>-- Select Time slot --</option>
+                                                    <select className="form-control mr-2" name='time_slot' id="timeSlot" defaultValue="placeholder">
+                                                        <option value="placeholder" disabled>-- Select Time slot --</option>
                                                         <option value="10:00 AM">10:00 AM</option>
                                                         <option value="12:00 PM">12:00 PM</option>
                                                         <option value="2:00 PM">2:00 PM</option>
@@ -51,8 +51,8 @@ const Book = () => {
                                                         <option value="6:00 PM">6:00 PM</option>
                                                         <option value="10:00 PM">10:00 PM</option>
                                                     </select>
-                                                    <select className="form-control" name='theatre' id="theatre">
-                                                        <option value="" disabled selected>-- Select Theatre --</option>
+                                                    <select className="form-control" name='theatre' defaultValue="placeholder1" id="theatre">
+                                                        <option value="placeholder1" disabled >-- Select Theatre --</option>
                                                         <option value="INOX: Himalaya Mall">INOX: Himalaya Mall</option>
                                                         <option value="Cinepolis: Nexus Ahmedabad One">Cinepolis: Nexus Ahmedabad One</option>
                                                         <option value="Wide Angle: Ahmedabad">Wide Angle: Ahmedabad</option>
